@@ -40,10 +40,10 @@ class Sacar_DNI : AppCompatActivity() {
         val anioNacimientoStr = etAnioNacimiento.text.toString()
         val anioNacimiento = anioNacimientoStr.toIntOrNull()
 
-        val edad = anioActual - anioNacimiento!!
-
         if (anioNacimiento != null) {
             val anioActual = Calendar.getInstance().get(Calendar.YEAR)
+            val edad = anioActual - anioNacimiento
+
             val mensaje = if (edad >= 18) {
                 "Debes sacar tu DNI."
             } else {
