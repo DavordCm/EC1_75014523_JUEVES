@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Empresa_de_Prestamos">
 
-    <!-- EditText para ingresar el monto del préstamo -->
     <EditText
         android:id="@+id/etPrestamo"
         android:layout_width="0dp"
@@ -19,7 +18,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
 
-    <!-- Botón para calcular el número de cuotas y el valor de la cuota -->
     <Button
         android:id="@+id/btnCalcularCuotas"
         android:layout_width="wrap_content"
@@ -30,9 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- TextView para mostrar el número de cuotas -->
     <TextView
-        android:id="@+id/tvCuotas"
+        android:id="@+id/txtCuotas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Número de cuotas: "
@@ -42,14 +39,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- TextView para mostrar el valor de cada cuota -->
     <TextView
-        android:id="@+id/tvValorCuota"
+        android:id="@+id/txtValorCuota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Valor de cada cuota: "
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/tvCuotas"
+        app:layout_constraintTop_toBottomOf="@id/txtCuotas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
