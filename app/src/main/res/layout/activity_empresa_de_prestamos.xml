@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empresa_de_Prestamos">
+
+    <!-- EditText para ingresar el monto del préstamo -->
+    <EditText
+        android:id="@+id/etPrestamo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el monto del préstamo"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para calcular el número de cuotas y el valor de la cuota -->
+    <Button
+        android:id="@+id/btnCalcularCuotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Cuotas"
+        app:layout_constraintTop_toBottomOf="@id/etPrestamo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para mostrar el número de cuotas -->
+    <TextView
+        android:id="@+id/tvCuotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de cuotas: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcularCuotas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para mostrar el valor de cada cuota -->
+    <TextView
+        android:id="@+id/tvValorCuota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor de cada cuota: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvCuotas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
